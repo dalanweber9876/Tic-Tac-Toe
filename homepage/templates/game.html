@@ -1,0 +1,83 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href='/static/game.css?{% now "U" %}'/>
+</head>
+<body>
+    <h1>Tic Tac Toe</h1>
+    
+    <!-- Break each piece of the tic tac toe board into sections -->
+    <!-- onclick="myFunction()" waits for one of the buttons to be pressed in order to dynamically fill the section with javascript-->
+    <section id="quadrant1">
+        <section id="one">
+            <h2 class="piece1"></h2>
+            <button onclick="myFunction()" class="button1">Go Here!</button>
+        </section>
+        
+    </section>
+
+    <section id="quadrant2">    
+        <section id="two">
+            <h2 class="piece2"></h2>
+            <button onclick="myFunction2()" class="button2">Go Here!</button>
+        </section>
+    </section>
+
+    <section id="quadrant3">    
+        <section id="three">
+            <h2 class="piece3"></h2>
+            <button onclick="myFunction3()" class="button3">Go Here!</button>
+        </section>
+    </section>
+
+    <section id="quadrant4">    
+        <section id="four">
+            <h2 class="piece4"></h2>
+            <button onclick="myFunction4()" class="button4">Go Here!</button>
+        </section>
+    </section>
+
+    <section id="quadrant5">    
+        <section id="five">
+            <h2 class="piece5"></h2>
+            <button onclick="myFunction5()" class="button5">Go Here!</button>
+        </section>
+    </section>
+
+    <section id="quadrant6">    
+        <section id="six">
+            <h2 class="piece6"></h2>
+            <button onclick="myFunction6()" class="button6">Go Here!</button>
+        </section>
+    </section>
+
+    <section id="quadrant7">    
+        <section id="seven">
+            <h2 class="piece7"></h2>
+            <button onclick="myFunction7()" class="button7">Go Here!</button>
+        </section>
+    </section>
+
+    <section id="quadrant8">    
+        <section id="eight">
+            <h2 class="piece8"></h2>
+            <button onclick="myFunction8()" class="button8">Go Here!</button>
+        </section>
+    </section>
+
+    <section id="quadrant9">    
+        <section id="nine">
+            <h2 class="piece9"></h2>
+            <button onclick="myFunction9()" class="button9">Go Here!</button>
+        </section>
+    </section>
+
+    <h2 class="start"></h2>
+
+    <script src="{% static 'buttons.js' %}"></script>
+</body>
+</html>
